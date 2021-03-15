@@ -1,9 +1,10 @@
 {
-    "name": "BeatBot",
-    "prefix": ".",
+    "name": "Nicko",
+    "prefix": ",",
     "status": "EM FASE ALFA!",
-    "footer": "BeatBot",
-    "footer2": "BeatBot - Harry Potter",
-    "snapshotInfo": "SnapShot 1.0.0 - neobot! NOVO CORE!",
-    "snapshotInfoEsp": "SnapShot 0.1.0 Dia dos namorados! - Novos comandos especiais como: todo-amor-do-mundo, abraco-maravilha e mt mais para você conquistar o crush! - Data da SnapShot: 11/06/2020 - /help esp, para revelar os comanos"
+    "footer": "Nicko",
+    "footer2": "Nicko - Harry Potter",
+    "footer3": "Nicko - INJURY Project",
+    "snapshotInfo": "SnapShot 1.0.0 - Nicko! NOVO CORE!",
+    "snapshotInfoEsp": "> ➜ SnapShot 2.1.5 INJURY Project! \n\n Em um mundo onde o céu e o inferno estão em conflito, humanos se tornam para-demonios e para-anjos e são classificados por suas DEMONCLASS e ANGELCLASS! Eae? Por qual lado irá lutar? \n\n > ➜ `injury` para os comandos!"
 }

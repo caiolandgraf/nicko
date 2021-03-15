@@ -1,5 +1,5 @@
 module.exports = async (client, Discord, message, args, db, config) => {
-    if (!message.member.hasPermission("ADMINISTRATOR")) {
+    if (!message.author.hasPermission("ADMINISTRATOR")) {
         return message.channel.send(`Ooops! ${message.author} parece que você não tem permissão :/`);
     }
     let avatar = message.author.displayAvatarURL({ dynamic: true }).replace("webp", "png")
@@ -7,7 +7,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
     let splitarg = args.join(" ").split(" / ");
     let aMessage = splitarg[1]
     if (!aMessage) {
-        return message.reply("utilize: `/dm <para quem> / <mensagem>`")
+        return message.reply("utilize: `,dm <para quem> / <mensagem>`")
     }
     
 

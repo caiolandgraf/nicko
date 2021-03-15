@@ -4,9 +4,9 @@ module.exports = async (client, Discord, message, args, db, config) => {
     let avatar = message.author.displayAvatarURL({ dynamic: true }).replace("webp", "png")
 
     let embed = new Discord.MessageEmbed()
-        .setColor("44475a")
+        .setColor("303136")
         .setDescription(`${message.author} abraçou ${usuario1}`)
-        .setImage("https://66.media.tumblr.com/291c8b98b219283f9e21927e7ef6c3f2/tumblr_mq00mpgLWc1sa44jvo1_500.gif")
+        .setImage("https://acegif.com/wp-content/uploads/anime-hug.gif")
         .setFooter(config.footer, avatar)
         .setTimestamp()
 
@@ -20,9 +20,9 @@ module.exports = async (client, Discord, message, args, db, config) => {
             r2.users.remove(message.mentions.users.first().id)
             avatar = usuario1.displayAvatarURL({ dynamic: true }).replace("webp", "png")
             let embed = new Discord.MessageEmbed()
-                .setColor("44475a")
+                .setColor("303136")
                 .setDescription(`${usuario1} abraçou ${message.author}`)
-                .setImage("https://66.media.tumblr.com/291c8b98b219283f9e21927e7ef6c3f2/tumblr_mq00mpgLWc1sa44jvo1_500.gif")
+                .setImage("https://media1.giphy.com/media/lrr9rHuoJOE0w/giphy.gif")
                 .setFooter(config.footer, avatar)
                 .setTimestamp()
             message.channel.send(embed)

@@ -8,7 +8,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
         .setTimestamp()
         .setDescription(`${usuario} jogou o: Chrome Dinosaur!`)
         .setImage("https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Social_dino-with-hat.gif")
-        .setColor("44475a")
+        .setColor("303136")
 
     const m = await message.channel.send("Carregando...")
     m.edit(``, embed)

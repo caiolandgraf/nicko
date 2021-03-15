@@ -4,7 +4,7 @@ module.exports = async (clien, Discord, message, args, db, config) => {
     let avatar = message.author.displayAvatarURL({ dynamic: true }).replace("webp", "png")
 
     let embed = new Discord.MessageEmbed()
-        .setColor("44475a")
+        .setColor("303136")
         .setDescription(`${usuario1} é você que... o/a ${message.author}`)
         .setImage("https://media1.tenor.com/images/6e817cb96215c3a18973e708ea09e16c/tenor.gif?itemid=8826760")
         .setFooter(config.footer, avatar)
@@ -20,7 +20,7 @@ module.exports = async (clien, Discord, message, args, db, config) => {
             r2.users.remove(message.mentions.users.first().id)
             avatar = usuario1.displayAvatarURL({ dynamic: true }).replace("webp", "png")
             let embed = new Discord.MessageEmbed()
-                .setColor("44475a")
+                .setColor("303136")
                 .setDescription(`${message.author} é você que... o/a ${usuario1}`)
                 .setImage("https://media1.tenor.com/images/6e817cb96215c3a18973e708ea09e16c/tenor.gif?itemid=8826760")
                 .setFooter(config.footer, avatar)

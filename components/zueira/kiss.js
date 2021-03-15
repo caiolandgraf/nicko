@@ -4,9 +4,9 @@ module.exports = async (clien, Discord, message, args, db, config) => {
     let avatar = message.author.displayAvatarURL({ dynamic: true }).replace("webp", "png")
 
     let embed = new Discord.MessageEmbed()
-        .setColor("44475a")
+        .setColor("303136")
         .setDescription(`${message.author} beijou ${usuario1}`)
-        .setImage("https://i.pinimg.com/originals/6f/c2/5f/6fc25fdd3e22d89b19c3ea76d11789e6.gif")
+        .setImage("https://media1.giphy.com/media/nyGFcsP0kAobm/giphy.gif")
         .setFooter(config.footer, avatar)
         .setTimestamp()
 
@@ -20,9 +20,9 @@ module.exports = async (clien, Discord, message, args, db, config) => {
             r2.users.remove(message.mentions.users.first().id)
             avatar = usuario1.displayAvatarURL({ dynamic: true }).replace("webp", "png")
             let embed = new Discord.MessageEmbed()
-                .setColor("44475a")
+                .setColor("303136")
                 .setDescription(`${usuario1} beijou ${message.author}`)
-                .setImage("https://i.pinimg.com/originals/6f/c2/5f/6fc25fdd3e22d89b19c3ea76d11789e6.gif")
+                .setImage("https://media1.tenor.com/images/d9004e66425fdd6cf84d3b252f7bbbf0/tenor.gif")
                 .setFooter(config.footer, avatar)
                 .setTimestamp()
             message.channel.send(embed)

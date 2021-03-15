@@ -8,7 +8,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
         .setTimestamp()
         .setDescription(`Bom dia para você também ${usuario}!`)
         .setImage("https://optclean.com.br/wp-content/uploads/2016/11/bom-dia-grupo-whatsapp-21.jpg")
-        .setColor("44475a")
+        .setColor("303136")
 
     const m = await message.channel.send("Carregando...")
     m.edit(``, embed)

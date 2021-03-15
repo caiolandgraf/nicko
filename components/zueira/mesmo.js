@@ -4,7 +4,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
     let avatar = message.author.displayAvatarURL({ dynamic: true }).replace("webp", "png")
 
     let embed = new Discord.MessageEmbed()
-        .setColor("44475a")
+        .setColor("303136")
         .setDescription(`AH É MESMO É? ${usuario}`)
         .setImage("https://www.suporteinformatika.com.br/meabot/gifs/mesmo.gif")
         .setFooter(config.footer, avatar)

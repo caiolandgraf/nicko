@@ -8,7 +8,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
         .setTimestamp()
         .setDescription(`${usuario} é ${Math.floor(Math.random() * 100)}% gado!`)
         .setImage("https://thumbs.gfycat.com/NextMellowBlackwidowspider-size_restricted.gif")
-        .setColor("44475a")
+        .setColor("303136")
 
     const m = await message.channel.send("Carregando...")
     m.edit(``, embed)

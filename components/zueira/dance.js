@@ -13,7 +13,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
             .setTimestamp()
             .setDescription(msg)
             .setImage(gif)
-            .setColor("44475a")
+            .setColor("303136")
         message.channel.send(embed)
     } else {
         msg = `${message.author} dançou com ${usuario1}!`;
@@ -23,7 +23,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
             .setTimestamp()
             .setDescription(msg)
             .setImage(gif)
-            .setColor("44475a")
+            .setColor("303136")
 
         message.channel.send(embed).then(msg => {
             msg.react('🔁').then(r => {
@@ -39,7 +39,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
                     .setTimestamp()
                     .setDescription(`${usuario1} dançou com ${message.author}!`)
                     .setImage(gif)
-                    .setColor("44475a")
+                    .setColor("303136")
 
                 message.channel.send(embed)
             })

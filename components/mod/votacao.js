@@ -18,7 +18,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
     let embed = new Discord.MessageEmbed()
         .setColor("303136")
         .setTitle("<a:alerta:737691068501590045> VOTAÇÃO")
-        .setDescription("<a:seta_RDO:737684794036715621>`"+aTitle+"` \n"+aAnnouncement)
+        .setDescription("<a:seta_RDO:737684794036715621>`" + aTitle + "` \n" + aAnnouncement)
         .setThumbnail(message.author.displayAvatarURL({ dynamic: true }))
         .setFooter(config.footer, avatar)
         .setTimestamp()
@@ -39,34 +39,50 @@ module.exports = async (client, Discord, message, args, db, config) => {
         const X = msg.createReactionCollector(XFilter);
 
         V.on('collect', r2 => {
-            r2.users.remove(message.author.id)
+
+            for (var users of r2.users.cache) {
+                setTimeout( () => {
+                    if (users[1].bot == false) {
+                        let userId = users[1].id
+                        r2.users.remove(userId)
+                    }
+                }, 1000)
+            }
 
             let embed = new Discord.MessageEmbed()
                 .setColor("303136")
                 .setTitle("<a:alerta:737691068501590045> VOTAÇÃO")
-                .setDescription("<a:seta_RDO:737684794036715621>`"+aTitle+"` \n"+aAnnouncement)
+                .setDescription("<a:seta_RDO:737684794036715621>`" + aTitle + "` \n" + aAnnouncement)
                 .setAuthor(`${porcentV++} pessoa(s) votaram em ✅ \n ${porcentX} pessoa(s) votaram em ❌`)
                 .setThumbnail(message.author.displayAvatarURL({ dynamic: true }))
                 .setFooter(config.footer, avatar)
                 .setTimestamp()
 
-                msg.edit(``, embed)
+            msg.edit(``, embed)
 
         })
 
         X.on('collect', r2 => {
-            r2.users.remove(message.author.id)
+
+            for (var users of r2.users.cache) {
+                setTimeout( () => {
+                    if (users[1].bot == false) {
+                        let userId = users[1].id
+                        r2.users.remove(userId)
+                    }
+                }, 1000)
+            }
 
             let embed = new Discord.MessageEmbed()
                 .setColor("303136")
                 .setTitle("<a:alerta:737691068501590045> VOTAÇÃO")
-                .setDescription("<a:seta_RDO:737684794036715621>`"+aTitle+"` \n"+aAnnouncement)
+                .setDescription("<a:seta_RDO:737684794036715621>`" + aTitle + "` \n" + aAnnouncement)
                 .setAuthor(`${porcentV} pessoa(s) votaram em ✅ \n ${porcentX++} pessoa(s) votaram em ❌`)
                 .setThumbnail(message.author.displayAvatarURL({ dynamic: true }))
                 .setFooter(config.footer, avatar)
                 .setTimestamp()
 
-                msg.edit(``, embed)
+            msg.edit(``, embed)
         })
     })
 }

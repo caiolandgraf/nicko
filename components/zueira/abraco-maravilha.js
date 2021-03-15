@@ -5,7 +5,7 @@ module.exports = async (clien, Discord, message, args, db, config) => {
     let avatar = message.author.displayAvatarURL({ dynamic: true }).replace("webp", "png")
 
     let embed = new Discord.MessageEmbed()
-        .setColor("44475a")
+        .setColor("303136")
         .setDescription(`${message.author} deu um abraço maravilha em ${usuario1}! O abraço com todo amor do mundo :3`)
         .setImage("https://pa1.narvii.com/6334/cc8671baffb228efcb4d90aa9bd51cac8bccf9da_hq.gif")
         .setThumbnail(message.author.displayAvatarURL({ dynamic: true }))
@@ -22,7 +22,7 @@ module.exports = async (clien, Discord, message, args, db, config) => {
             r2.users.remove(message.mentions.users.first().id)
             avatar = usuario1.displayAvatarURL({ dynamic: true }).replace("webp", "png")
             let embed = new Discord.MessageEmbed()
-                .setColor("44475a")
+                .setColor("303136")
                 .setDescription(`${usuario1} deu um abraço maravilha em ${message.author}! O abraço com todo amor do mundo :3`)
                 .setImage("https://pa1.narvii.com/6334/cc8671baffb228efcb4d90aa9bd51cac8bccf9da_hq.gif")
                 .setThumbnail(usuario1.displayAvatarURL({ dynamic: true }))

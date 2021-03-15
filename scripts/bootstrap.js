@@ -11,6 +11,7 @@ const config = require("../scripts/boot/config.json");
 
 const mod = require("../scripts/commands/mod")(config.prefix, "mod")
 const hogwarts = require("../scripts/commands/hogwarts")(config.prefix, "hogwarts")
+const injury = require("../scripts/commands/injury")(config.prefix, "injury-project")
 const zueira = require("../scripts/commands/zueira")(config.prefix, "zueira")
 const _default = require("../scripts/commands/default")(config.prefix, "default")
 
@@ -23,6 +24,7 @@ exports.config = config
 
 exports.mod = mod
 exports.hogwarts = hogwarts
+exports.injury = injury
 exports.zueira = zueira
 exports._default = _default
 

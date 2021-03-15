@@ -9,7 +9,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
             .setTimestamp()
             .setDescription(`${message.author} zombou de si mesmo!`)
             .setImage("https://img.ibxk.com.br/2015/05/29/29131059399104.gif")
-            .setColor("44475a")
+            .setColor("303136")
 
         const m = await message.channel.send("Carregando...")
         m.edit(``, embed)
@@ -19,7 +19,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
             .setTimestamp()
             .setDescription(`${message.author} zombou de ${usuario}!`)
             .setImage("https://img.ibxk.com.br/2015/05/29/29130519988082.gif")
-            .setColor("44475a")
+            .setColor("303136")
 
         message.channel.send(embed).then(msg => {
         msg.react('🔁').then(r => {
@@ -31,7 +31,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
             r2.users.remove(message.mentions.users.first().id)
             avatar = usuario1.displayAvatarURL({ dynamic: true }).replace("webp", "png")
             let embed = new Discord.MessageEmbed()
-                .setColor("44475a")
+                .setColor("303136")
                 .setDescription(`${usuario1} zombou de ${message.author}`)
                 .setImage("https://img.ibxk.com.br/2015/05/29/29130519988082.gif")
                 .setFooter(config.footer, avatar)

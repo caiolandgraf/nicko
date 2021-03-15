@@ -19,7 +19,6 @@ module.exports = async (client, Discord, message, args, db, config) => {
         .addField(`**Minha livraria**`, livraria, true)
         .addField(`**Criador**`, criador, true)
         .addField(`**Criado em**`, `${client.moment(client.user.createdAt).format("LLL")}`, true)
-        .addField(`**Delay**`, `500ms`, true)
         .setFooter(config.footer, avatar)
         .setThumbnail(client.user.displayAvatarURL())
         .setTimestamp()

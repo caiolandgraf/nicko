@@ -7,7 +7,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
         .setFooter(config.footer, avatar)
         .setTimestamp()
         .setDescription(`${usuario}, NHENHENHENHENHE SEBOSO!`)
-        .setColor("44475a")
+        .setColor("303136")
 
     await message.channel.send(embed)
     await message.channel.send(`https://www.suporteinformatika.com.br/meabot/gifs/a.mp4`)

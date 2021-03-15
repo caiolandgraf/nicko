@@ -8,7 +8,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
         .setTimestamp()
         .setDescription(`${usuario} jogou o: Mario!`)
         .setImage("https://media1.giphy.com/media/x2woMnCz4W0Vy/source.gif")
-        .setColor("44475a")
+        .setColor("303136")
 
     const m = await message.channel.send("Carregando...")
     m.edit(``, embed)

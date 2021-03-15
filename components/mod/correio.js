@@ -1,7 +1,7 @@
 module.exports = async (client, Discord, message, args, db, config) => {
     let splitarg = args.join(" ").split(" / ");
     if (args.length === 0) {
-        return message.reply(`utilize: /${command} <para quem> / <mensagem>`)
+        return message.reply(`utilize: ,${command} <para quem> / <mensagem>`)
     }
     let aFor = message.mentions.users.first();
     let aMessage = splitarg[1]

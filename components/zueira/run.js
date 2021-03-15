@@ -18,7 +18,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
         .setTimestamp()
         .setDescription(msg)
         .setImage(gif)
-        .setColor("44475a")
+        .setColor("303136")
 
     const m = await message.channel.send("Carregando...")
     m.edit(``, embed)

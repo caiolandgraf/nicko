@@ -16,7 +16,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
         "`"+client.guilds.cache.size+" servers`", false)
 
         .addField(":warning: Estou sendo usado por:", 
-        "`"+client.users.cache.size+" pessoas`", false)
+        "`"+message.guild.memberCount+" pessoas neste server`", false)
 
         .setFooter(config.footer, avatar)
         .setTimestamp()

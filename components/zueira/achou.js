@@ -8,7 +8,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
         .setTimestamp()
         .setDescription(`${usuario} ACHOU ERRADO, OTÁRIO!`)
         .setImage("https://media1.tenor.com/images/ca7f01272f2d1d0db2426e21b5dcf665/tenor.gif?itemid=10902943")
-        .setColor("44475a")
+        .setColor("303136")
 
     const m = await message.channel.send("Carregando...")
     m.edit(``, embed)

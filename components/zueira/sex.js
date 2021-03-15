@@ -4,9 +4,9 @@ module.exports = async (client, Discord, message, args, db, config) => {
     let avatar = message.author.displayAvatarURL({ dynamic: true }).replace("webp", "png")
 
     let embed = new Discord.MessageEmbed()
-        .setColor("44475a")
+        .setColor("303136")
         .setDescription(`${message.author} fez fuc fuc com ${usuario1}`)
-        .setImage("https://33.media.tumblr.com/62c34daeef3233ab8cbd4aba313dd5d1/tumblr_nccmq6vn6r1tgv7igo6_500.gif")
+        .setImage("https://thumb-p0.xhcdn.com/a/l6ZXg2hi5dW57g7XQYeFgQ/000/087/503/290_450.gif")
         .setFooter(config.footer, avatar)
         .setTimestamp()
 
@@ -20,9 +20,9 @@ module.exports = async (client, Discord, message, args, db, config) => {
             r2.users.remove(message.mentions.users.first().id)
             avatar = usuario1.displayAvatarURL({ dynamic: true }).replace("webp", "png")
             let embed = new Discord.MessageEmbed()
-                .setColor("44475a")
+                .setColor("303136")
                 .setDescription(`${usuario1} fez fuc fuc com ${message.author}`)
-                .setImage("https://33.media.tumblr.com/62c34daeef3233ab8cbd4aba313dd5d1/tumblr_nccmq6vn6r1tgv7igo6_500.gif")
+                .setImage("https://thumb-p0.xhcdn.com/a/l6ZXg2hi5dW57g7XQYeFgQ/000/087/503/290_450.gif")
                 .setFooter(config.footer, avatar)
                 .setTimestamp()
             message.channel.send(embed)

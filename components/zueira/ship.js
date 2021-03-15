@@ -101,7 +101,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
         .setTitle(text)
         .setDescription(`<@${usuario1}> + <@${usuario2}> = ${percentDecoration} ${value}%`)
         .setImage(gif)
-        .setColor("44475a")
+        .setColor("303136")
 
     const m = await message.channel.send("Carregando...")
     m.edit(``, embed)

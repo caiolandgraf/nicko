@@ -4,7 +4,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
     let avatar = message.author.displayAvatarURL({ dynamic: true }).replace("webp", "png")
 
     let embed = new Discord.MessageEmbed()
-        .setColor("44475a")
+        .setColor("303136")
         .setDescription(`${message.author} fuzilou ${usuario1} até a morte!`)
         .setImage("https://media0.giphy.com/media/TBOvwBGkQShnq/200.gif")
         .setFooter(config.footer, avatar)
@@ -20,7 +20,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
             r2.users.remove(message.mentions.users.first().id)
             avatar = usuario1.displayAvatarURL({ dynamic: true }).replace("webp", "png")
             let embed = new Discord.MessageEmbed()
-                .setColor("44475a")
+                .setColor("303136")
                 .setDescription(`${usuario1} fuzilou ${message.author} até a morte!`)
                 .setImage("https://media0.giphy.com/media/TBOvwBGkQShnq/200.gif")
                 .setFooter(config.footer, avatar)

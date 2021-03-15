@@ -9,7 +9,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
             .setTimestamp()
             .setDescription(`${message.author} se suicidou! press "f" to respect`)
             .setImage("https://media1.giphy.com/media/wEVWyePowLHNK/source.gif")
-            .setColor("44475a")
+            .setColor("303136")
 
         const m = await message.channel.send("Carregando...")
         m.edit(``, embed)
@@ -20,7 +20,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
             .setTimestamp()
             .setDescription(`${message.author} matou ${usuario}! press "f" to respect`)
             .setImage("https://thumbs.gfycat.com/SpryColorlessLark-small.gif")
-            .setColor("44475a")
+            .setColor("303136")
 
         message.channel.send(embed).then(msg => {
         msg.react('🔁').then(r => {
@@ -34,7 +34,7 @@ module.exports = async (client, Discord, message, args, db, config) => {
             r2.users.remove(message.mentions.users.first().id)
             avatar = usuario.displayAvatarURL({ dynamic: true }).replace("webp", "png")
             let embed = new Discord.MessageEmbed()
-                .setColor("44475a")
+                .setColor("303136")
                 .setDescription(`${usuario} matou ${message.author}! press "f" to respect`)
                 .setImage("https://thumbs.gfycat.com/SpryColorlessLark-small.gif")
                 .setFooter(config.footer, avatar)
