@@ -183,7 +183,7 @@ client.on("message", async (message) => {
         await message.channel.send(`OIII!`);
     } else if (msgTLC.match(/nicko/) && msgTLC.match(/to bem/) || msgTLC.match(/nicko/) && msgTLC.match(/i'm fine/)) {
         await message.channel.send(`Que bom <@${message.author.id}>! EU TO MUITOOO BEM!`);
-    } else if (msgTLC.match(/nicko/) && msgTLC.match(/vc quer ser minha amiga/)) {
+    } else if (msgTLC.match(/nicko/) && msgTLC.match(/ser minha amiga/)) {
         await message.channel.send(`CLARO! Você parece ser uma pessoa muito legal!`);
     } else if (msgTLC.match(/nicko/) && msgTLC.match(/né/)) {
         await message.channel.send(`Sim sim`);
@@ -243,8 +243,8 @@ client.on("message", async (message) => {
         await message.channel.send(`A nem... Eu sou só uma IA, você merece coisa melhor! <3`); 
     } else if (msgTLC == "gosta de carne nicko?" || msgTLC == "nicko vc gosta de carne?" || msgTLC == "vc come carne nicko?" || msgTLC == "do you eat nicko meat?") {
         await message.channel.send(`Hmmm prefiro mais uns DB ou umas memórias RAM hmmm dlç :D`);
-    } else if (msgTLC == "pera") {
-        await message.channel.send(`To perando :)`);
+    } else if (msgTLC.match(/pera/)) {
+        await message.channel.send(`BLZ akkaka :)`);
     } else if (msgTLC == "status nicko" || msgTLC == "nicko status" || msgTLC == "me de seus status nicko" || msgTLC == "give me status nicko"  || msgTLC == "give me your status nicko") {
         mod[",status"](client, Discord, message, args, db, config);
     } else if (msgTLC == "limpa o chat nicko" || msgTLC == "nicko limpa o chat" || msgTLC == "clear nicko") {
@@ -288,7 +288,8 @@ client.on("message", async (message) => {
     }
     if (!message.content.toLowerCase().startsWith(config.prefix)) return;
     if (message.content.toLowerCase().startsWith("..")) return;
-    message.author.lastMessage.delete();
+    if (message.content.toLowerCase().startsWith(",_,")) return;
+		message.author.lastMessage.delete();
 
     setTimeout(async () => {
 
@@ -327,4 +328,4 @@ client.on("message", async (message) => {
     }, 1);
 });
 
-client.login("ODEyNzc3MDg4Njk1MTQwMzYy.YDFrpg.ZVQa9KbvGpEl_37x6yyIZd10MRA");
+client.login("ODEyNzc3MDg4Njk1MTQwMzYy.YDFrpg.JgrB_-ZPaTb4WDbPERCuLM-l7sE");

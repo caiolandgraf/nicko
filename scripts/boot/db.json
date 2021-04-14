@@ -339,5 +339,16 @@
       "autoRole2": null,
       "autoRole3": null
     }
+  ],
+  "816345287957151786": [
+    {
+      "channelId": null,
+      "channelByeId": null,
+      "muteRoleId": null,
+      "logChat": null,
+      "autoRole1": null,
+      "autoRole2": null,
+      "autoRole3": null
+    }
   ]
 }
